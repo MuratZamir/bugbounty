@@ -34,7 +34,7 @@ If you are a beginner bug bounty hunter, you should choose programs that pay les
 
 
 ### Things To Bear In Mind When Doing Bug Bounty
-**Scope Awareness:** Be very careful with the scope of the application. If you're testing a website and the payment mechanism redirects you to a different domain, be aware of the domain change (it could redirect to a whole different application, especially for payment mechamisms).
+**Scope Awareness:** Be very careful with the scope of the application. If you're testing a website and the payment mechanism redirects you to a different domain, be aware of the domain change (it could redirect to a whole different application, especially for payment mechanisms).
 
 
 
