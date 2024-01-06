@@ -1,5 +1,5 @@
 # IDOR ~ Insecure Direct Object References
-use another unique identifier to access a data set that the attacker should not have access to 
+Use another unique identifier to access a data set that the attacker should not have access to 
 
 ### IDOR Violation:
 Specifically targeting some type of identifies (like ID) that is used to pull a larger subset of data including sensitive data from the database. 
@@ -7,15 +7,15 @@ In many cases, a general user is able to see other user's information
 
 
 # AC ~ Access Control
-testing for IDOR requires two separate accounts w/ the same role.
+Testing for IDOR requires two separate accounts w/ the same role.
 testing for AC bypass requires two or more separate accounts w/ different roles
 
 ### AC violation:
-If a suer with a role other than Admin is able to use the admin mechanism to read sensitive data about other users. An example to AC violation is finding a way to bypass 403 response from the web application.
-    1. identify granular Roles within an instance of a web application
-    2. enumerate mechanisms that Role should not have the ability to execute
-    3. determine how that mechanism is actually executed w/ HTTP requests
-    4. execute the mechanisms the Role should not be able to execute
+If a user with a role other than Admin is able to use the admin mechanism to read sensitive data about other users. An example to AC violation is finding a way to bypass 403 response from the web application. <br>
+1. identify granular Roles within an instance of a web application
+2. enumerate mechanisms that Role should not have the ability to execute
+3. determine how that mechanism is actually executed w/ HTTP requests
+4. execute the mechanisms the Role should not be able to execute
 
 
 ## Main methodology
@@ -38,11 +38,13 @@ Then understand how authentication and authorization is made, this is to underst
 > `Creating multiple accounts`: + (plus notation) is a way to create multiple account under the same email, such as user@bugcrowdninja.com, user+admin@bugcrowdninja.com, user+developer@bugcrowdninja.com, and so on.  
 
 
+##### THINGS TO BEAR IN MIND WHEN DOING BugBounty
+Be very careful with the scope of the application, if you're testing a website and the payment mechanism redirects you to a different domain, be aware of the domain change. (it could redirect to a whole different application, especially for payment stuff )
+
+
+
+
 ##### THINGS TO LOOK UP
 Learn what is DOM and how it is being used in the web context
 What does it mean if a JWT token or any kind of token being used and validated, being used and not validated?
-
-##### THINGS TO BEAR IN MIND WHEN DOING BugBounty
-Be very careful with the scope of the application, if you're testing a website and the payment mechanism redirects you to a different domain, be aware of the domain change. (it could redirect to a whole different application, especially for payment stuff )
 Learn what is the importance of CSRF cookie, what does it do, what is CSRF? 
-
