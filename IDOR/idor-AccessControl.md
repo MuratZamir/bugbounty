@@ -21,7 +21,7 @@ Try to identify ways to understand how the user data is displayed. Is it coming 
 If you are a beginner bug bounty hunter, you should choose programs that pay less than others. The ones that pay a lot of money for bugs are usually being tested by other experienced hunters, but the ones that pay lower aren't often tested as much as higher payout ones. 
 
 
-## Questions to ask when approaching to the application
+## Questions to Ask When Approaching to an Application
 1. Role Validation: How is the application validating the role?
 2. User Identification: How is the application identifying the user?
 3. Permission Check: How is the application identifying what role is trying to perfom the operation, and should they be allowed to do that certain operation?
@@ -33,7 +33,7 @@ If you are a beginner bug bounty hunter, you should choose programs that pay les
 > `Obtain the objects.` Object is the response returning back from the response, like the objects returned with JSON (e.g. userId, objectId, date, email...) With the obtained objects, try to send requests with different user identifiers to see if any object violates the access control.<br><br>`Create multiple accounts.` + (plus notation) is a way to create multiple account under the same email, such as user@hackerone.com, user+admin@hackerone.com, user+developer@hackerone.com, and so on.  
 
 
-### Things To Bear In Mind When Doing Bug Bounty
+### Things to Bear in Mind When Doing Bug Bounty
 **Scope Awareness:** Be very careful with the scope of the application. If you're testing a website and the payment mechanism redirects you to a different domain, be aware of the domain change (it could redirect to a whole different application, especially for payment mechanisms).
 
 
