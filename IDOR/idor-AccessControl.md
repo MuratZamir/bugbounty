@@ -1,4 +1,4 @@
-# IDOR ~ In-Direct Object Reference 
+# IDOR ~ Insecure Direct Object References
 use another unique identifier to access a data set that the attacker should not have access to 
 
 ### IDOR Violation:
@@ -31,7 +31,7 @@ Then understand how authentication and authorization is made, this is to underst
 
 > [!TIP]
 > `Try to create sections`: 1. Pointers: identify other point of areas that would lead to other types of attacks (it is not just about finding another vulnerability, but take note of the important indication of possible idor or anything like that )
->                        2. Mechanisms: try to idenntify CRUD mechanisms (create, read, update, delete), its good to breakdown each mechanism to its HTTP methods and what they do in the application so that you can see the whole picture better and refer back to your notes if you're lost.
+> 2. Mechanisms: try to idenntify CRUD mechanisms (create, read, update, delete), its good to breakdown each mechanism to its HTTP methods and what they do in the application so that you can see the whole picture better and refer back to your notes if you're lost.
 
 > [!TIP]
 > `Obtain the objects`: its the response returning back, like the objects returned with JSON (e.g.  userId, objectId, date, email...)
