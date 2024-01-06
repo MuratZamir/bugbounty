@@ -19,10 +19,9 @@ If a user with a role other than Admin is able to use the admin mechanism to rea
 
 
 ## Main methodology
-Find a complex application. Complex applications will have lots of endpoints and many different places to look for vulnerabilities. Make sure the application you're testing has some different Roles, such as normal user, admin, audit role, and others. <br>
-If you are a beginner bug bounty hunter, tend to choose programs that pay less than others. The ones that pay a lot of money for bugs are usually being tested by other experienced hunters, but the ones that pay lower aren't often tested as much as higher payout ones. <br>
-Try to identify ways to understand how the user data is displayed, is it coming from the backend or some sort of API call is happening, or any other ways? <br>
-Then understand how authentication and authorization is made, this is to understand how the website know that you are you. 
+Find a complex application. Complex applications will have lots of endpoints and many different places to look for vulnerabilities. Make sure the application you're testing has some different Roles, such as normal user, admin, audit role, and others. <br><br>
+If you are a beginner bug bounty hunter, tend to choose programs that pay less than others. The ones that pay a lot of money for bugs are usually being tested by other experienced hunters, but the ones that pay lower aren't often tested as much as higher payout ones. <br> <br>
+Try to identify ways to understand how the user data is displayed, is it coming from the backend or some sort of API call is happening, or any other ways? Then understand how authentication and authorization is made, this is to understand how the website know that you are you. 
 
 ## Questions to ask when approaching to the application
 1. how is the application validating the role?
@@ -30,8 +29,7 @@ Then understand how authentication and authorization is made, this is to underst
 3. how is the application identifying what role is trying to perfom the operation, and should they be allowed to do that certain operation?
 
 > [!TIP]
-> `Try to create sections`: 1. Pointers: identify other point of areas that would lead to other types of attacks (it is not just about finding another vulnerability, but take note of the important indication of possible idor or anything like that )
-> 2. Mechanisms: try to idenntify CRUD mechanisms (create, read, update, delete), its good to breakdown each mechanism to its HTTP methods and what they do in the application so that you can see the whole picture better and refer back to your notes if you're lost.
+> `Try to create sections`: 1. Pointers: identify other point of areas that would lead to other types of attacks (it is not just about finding another vulnerability, but take note of the important indication of possible idor or anything like that ) > <br>2. Mechanisms: try to idenntify CRUD mechanisms (create, read, update, delete), its good to breakdown each mechanism to its HTTP methods and what they do in the application so that you can see the whole picture better and refer back to your notes if you're lost.
 
 > [!TIP]
 > `Obtain the objects`: its the response returning back, like the objects returned with JSON (e.g.  userId, objectId, date, email...)
