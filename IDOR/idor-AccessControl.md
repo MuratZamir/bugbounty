@@ -29,11 +29,13 @@ Try to identify ways to understand how the user data is displayed, is it coming 
 3. how is the application identifying what role is trying to perfom the operation, and should they be allowed to do that certain operation?
 
 > [!TIP]
-> `Try to create sections`: 1. Pointers: identify other point of areas that would lead to other types of attacks (it is not just about finding another vulnerability, but take note of the important indication of possible idor or anything like that ) > <br>2. Mechanisms: try to idenntify CRUD mechanisms (create, read, update, delete), its good to breakdown each mechanism to its HTTP methods and what they do in the application so that you can see the whole picture better and refer back to your notes if you're lost.
+> `Try to create sections` 
+1. Pointers: identify other point of areas that would lead to other types of attacks (it is not just about finding another vulnerability, but take note of the important indication of possible idor or anything like that)<br><br>2. Mechanisms: try to idenntify CRUD mechanisms (create, read, update, delete), its good to breakdown each mechanism to its HTTP methods and what they do in the application so that you can see the whole picture better and refer back to your notes if you're lost.
 
 > [!TIP]
-> `Obtain the objects`: its the response returning back, like the objects returned with JSON (e.g.  userId, objectId, date, email...)
-> `Creating multiple accounts`: + (plus notation) is a way to create multiple account under the same email, such as user@bugcrowdninja.com, user+admin@bugcrowdninja.com, user+developer@bugcrowdninja.com, and so on.  
+> `Obtain the objects`
+Its the response returning back, like the objects returned with JSON (e.g.  userId, objectId, date, email...)
+`Creating multiple accounts`<br>+ (plus notation) is a way to create multiple account under the same email, such as user@bugcrowdninja.com, user+admin@bugcrowdninja.com, user+developer@bugcrowdninja.com, and so on.  
 
 
 ##### THINGS TO BEAR IN MIND WHEN DOING BugBounty
