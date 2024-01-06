@@ -29,7 +29,7 @@ Try to identify ways to understand how the user data is displayed, is it coming 
 3. how is the application identifying what role is trying to perfom the operation, and should they be allowed to do that certain operation?
 
 > [!TIP]
-> `Try to create sections such as pointers and mechanisms.` Pointers identify other point of areas that would lead to other types of attacks (it is not just about finding another vulnerability, but take note of the important indication of possible idor or anything like that)<br><br>Mechanisms try to identify CRUD mechanisms (create, read, update, delete), its good to breakdown each mechanism to its HTTP methods and what they do in the application so that you can see the whole picture better and refer back to your notes if you're lost.
+> `Create sections such as pointers and mechanisms.` **Pointers** identify other point of areas that would lead to other types of attacks (it is not just about finding another vulnerability, but take note of the important indication of possible idor or anything like that)<br><br>**Mechanisms** try to identify CRUD mechanisms (create, read, update, delete), its good to breakdown each mechanism to its HTTP methods and what they do in the application so that you can see the whole picture better and refer back to your notes if you're lost.
 
 > [!TIP]
 > `Obtain the objects.` Object is the response returning back from the response, like the objects returned with JSON (e.g. userId, objectId, date, email...)<br><br>`Create multiple accounts.` + (plus notation) is a way to create multiple account under the same email, such as user@hackerone.com, user+admin@hackerone.com, user+developer@hackerone.com, and so on.  
